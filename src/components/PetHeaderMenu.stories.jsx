@@ -23,3 +23,9 @@ export const Portuguese = {
     menuItems: ["Sobre", "Contatos", "Baixar", "Preços", "Conta"]
   }
 };
+
+export const Japanese = {
+  args: {
+    menuItems: ["概要", "連絡先", "ダウンロード", "価格", "アカウント"]
+  }
+};
