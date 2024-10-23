@@ -15,5 +15,5 @@ export default function PetCard ( props ) {
 
 PetCard.propTypes = {
   emoji: PropTypes.string,
-  description: PropTypes.string
+  description: PropTypes.string.isRequired
 };
