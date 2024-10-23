@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What are Props?</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <h1>Props</h1>
+  <script>
+    function Card( { title, description, image } ) {
+      // title, description, image 
+      // const title = props.title;
+      // const description = props.description;
+      // const image = props.image;
+      title += " the cat"
+
+      const imgElm = `
+        <div>
+          <img src="${image}"/>
+        </div>
+      `
+
+      return `<article class="container w-1/2">
+        <header class="text-4xl">
+          ${title}
+        </header>
+        ${imgElm}
+        <section>
+          ${description}
+        </section>
+      </article>`
+    }
+  </script>
+
+  <div class="flex">
+  <script>
+    const cats = [
+      "https://cdn2.thecatapi.com/images/b06.jpg",
+      "https://cdn2.thecatapi.com/images/akf.jpg"
+    ]
+    const props1 = {
+      title: "Frisky",
+      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis repellat dicta neque.",
+      image: cats[0]
+    }
+    document.write(
+      Card(props1)
+    )
+    document.write(
+      Card( {
+        title: "Snowball",
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis repellat dicta neque.",
+        image: cats[1]
+      })
+    )
+  </script>
+  </div>
+
+  <div>
+    <Card title="Frisky the Cat" 
+      description="Lorem ipsum dolor"
+      image="https://cdn2.thecatapi.com/images/b06.jpg" />
+  </div>
+  
+</body>
+</html>
