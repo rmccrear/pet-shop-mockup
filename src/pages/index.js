@@ -8,14 +8,14 @@ export default function Home() {
 
   return (
     <div className="bg-rose-500">
-      <div class="container mx-auto px-4">
+      <div className="container mx-auto px-4">
         <div className="flex justify-around py-3">
           <PetHeaderLogo logoSrc="/img/paw-face-sm.png" brandName="FindAFriend" />
           <PetHeaderMenu menuItems={["Home", "Sobre o app", "Animais disponíveis", "Sobre a FindAFriend", "Contact"]} />
         </div>
         <main className="mt-10 flex">
           <section className="w-1/2">
-            <PetCounter images={["/img/dog-mini-1.png", "/img/cat-mini-1.png", "/img/dog-mini-2.png", "/img/cat-mini-2.png"]} count={324} />
+            <PetCounter images={["/img/dog-mini-1.png", "/img/cat-mini-1.png", "/img/dog-mini-2.png", "/img/cat-mini-2.png"]} numberOfPets={324} />
           </section>
           <section className="w-1/2 flex flex-col">
             <PetHeroImage src="/img/hero-dog.png" />

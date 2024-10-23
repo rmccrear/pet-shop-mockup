@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
 // TODO: update this component to match the design in public/mockups/amigo-counter.png
-export default function PetCounter(props) {
-  const { images, count } = props;
+export default function PetCounter(frank) {
+  const { images, numberOfPets } = frank;
   return (
     <div className="bg-rose-500">
       <div className="todo-update-this-class">
@@ -14,7 +14,12 @@ export default function PetCounter(props) {
               className="-ml-3" />
         ))}
       </div>
-      <span className="italic">TODO: UPDATE THIS MESSAGE</span>
+      <span className="italic">
+        <strong> 
+          {numberOfPets}  amigos&nbsp;
+        </strong> 
+        na sua cidade
+      </span>
     </div>
   );
 };

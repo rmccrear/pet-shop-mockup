@@ -33,3 +33,31 @@ export const HotDog = {
     brandName: "HotDiggityDog"
   }
 };
+
+export const HotSquirrel = {
+  args: {
+    logoSrc: "img/paw-face-sm.png",
+    brandName: "HotDiggitySquirrel"
+  }
+};
+
+export const HotOstrich = {
+  args: {
+    logoSrc: "img/paw-face-sm.png",
+    brandName: "HotDiggityOstrich"
+  }
+};
+
+export const FurryFriend = {
+  args: {
+    logoSrc: "img/paw-face-sm.png",
+    brandName: "Find A Furry Friend"
+  }
+};
+
+export const FurryFriend2 = {
+  args: {
+    logoSrc: "img/paw-face-sm.png",
+    brandName: "Find A Furry Friend!!!!!"
+  }
+};
